@@ -5,7 +5,7 @@
   function router(path) {
     console.log(path);
     switch (path) {
-      case '':
+      case '/':
       case '/Users/nirbhaygupta/mywebsite/index.html':
         loadLandingHTML();
     }
