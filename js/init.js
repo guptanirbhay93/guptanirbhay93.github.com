@@ -18,7 +18,7 @@
       // const rootEl = document.getElementsById('root');
       // rootEl.innerHTML = landingRequest.responseText;
     }
-    landingRequest.open('GET', 'landing.html');
+    landingRequest.open('GET', '/landing.html');
     landingRequest.send();
   }
 })();
