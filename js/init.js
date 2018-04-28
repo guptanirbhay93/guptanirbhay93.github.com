@@ -6,7 +6,6 @@
     console.log(path);
     switch (path) {
       case '/':
-      case '/Users/nirbhaygupta/mywebsite/index.html':
         loadLandingHTML();
     }
   }
