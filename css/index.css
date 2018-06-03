@@ -41,14 +41,23 @@ body {
 .app-tools {
   min-height: 100vh;
   display: flex;
+  /* background: #84b833; */
 }
 
 .app-tools .side-bar {
-  width: 400px;
-  background: #5adeed;
+  width: 450px;
+}
+#side-1 {
+  background: #f4a062;
+}
+#side-2 {
+  background: #fbf6bf;
+}
+#side-3 {
+  background: #cd7044;
 }
 .app-tools .main-bar {
-  width: calc(100% - 400px);
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -62,13 +71,27 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  /* background: #84b833; */
 }
 .tag-image {
   width: 80%;
   border-radius: 3px;
   box-shadow: 0 0 58px -3px rgba(0, 0, 0, 0.4);
+  background-color: white;
+  opacity: 0.9;
 }
-
+.tag-name {
+  display: block;
+  font-size: 32px;
+  font-weight: 500;
+  color: #0a173d;
+  text-align: left;
+  line-height: 40px;
+  display: block;
+  height: 100vh;
+  line-height: 100vh;
+  text-align: center;
+}
 .name {
   display: block;
   font-size: 48px;
