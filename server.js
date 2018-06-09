@@ -4,7 +4,8 @@ const server = http.createServer();
 
 server.on("request", function(req, res) {
   console.log(req.url);
-  const path = `./${req.url === "/" ? "index.html" : req.url}`;
+  let path = `./${req.url === "/" ? "index.html" : req.url}`;
+
   fs.readFile(path, (err, data) => {
     if (!err) {
       res.end(data);
