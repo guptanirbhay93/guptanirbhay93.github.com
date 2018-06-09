@@ -149,6 +149,30 @@ body {
   position: relative;
 }
 
+.icons {
+  margin-top: 15px;
+  display: block;
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 400;
+  color: white;
+  animation-name: slidein;
+  animation-duration: 1200ms;
+  animation-delay: 2000ms;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  position: relative;
+}
+.icons a {
+  color: white;
+  text-decoration: none;
+}
+.icons i {
+  margin: 0 8px;
+  font-size: 24px;
+}
+
 .nav-bar {
   position: absolute;
   height: 60px;
