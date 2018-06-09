@@ -30,12 +30,13 @@ body {
 
 .main-block {
   color: white;
-  padding-left: 20%;
+  padding-left: 10%;
   display: flex;
   background: #0a173d;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+  height: 70vh;
+  position: relative;
 }
 
 .app-tools {
@@ -83,7 +84,7 @@ body {
 .tag-name {
   display: block;
   font-size: 32px;
-  font-weight: 500;
+  font-weight: 300;
   color: #0a173d;
   text-align: left;
   line-height: 40px;
@@ -92,23 +93,146 @@ body {
   line-height: 100vh;
   text-align: center;
 }
+
+@keyframes slidein {
+  from {
+    top: -20px;
+    opacity: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 0.6;
+  }
+  90% {
+    opacity: 0.8;
+  }
+  100% {
+    opacity: 1;
+  }
+  to {
+    top: 0;
+  }
+}
+
 .name {
   display: block;
-  font-size: 48px;
+  font-size: 42px;
   font-weight: 700;
+  text-shadow: black;
+  animation-name: slidein;
+  animation-duration: 800ms;
+  animation-delay: 100ms;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  position: relative;
 }
 
 .designation {
   display: block;
-  font-size: 36px;
+  font-size: 32px;
   font-weight: 400;
   color: #84b833;
+  animation-name: slidein;
+  animation-duration: 800ms;
+  animation-delay: 900ms;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  position: relative;
 }
 
 .location {
   display: block;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 30px;
   font-style: italic;
   font-weight: 400;
   color: white;
+  animation-name: slidein;
+  animation-duration: 800ms;
+  animation-delay: 1700ms;
+  animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  animation-direction: normal;
+  animation-fill-mode: backwards;
+  position: relative;
+}
+
+.nav-bar {
+  position: absolute;
+  height: 60px;
+  width: 100%;
+  right: 0;
+  top: 0;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0px 15px;
+}
+
+.nav-link {
+  font-size: 18px;
+  line-height: 60px;
+  color: white;
+  padding: 0 10px;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  min-width: 100px;
+  text-align: center;
+}
+
+.nav-link:hover::after {
+  content: "";
+  display: inline-block;
+  box-shadow: 0px 2px white;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+}
+
+.card {
+  min-width: 400px;
+  min-height: 500px;
+  display: block;
+  box-shadow: 0px 0px 28px -2px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  right: 60px;
+  background: white;
+  border-radius: 4px;
+  top: 200px;
+  background: rgba(10, 23, 61, 1);
+  padding: 15px;
+  box-sizing: border-box;
+  z-index: 2;
+}
+
+.title {
+  color: #84b833;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.tag-item {
+  display: inline-block;
+  line-height: 30px;
+  color: white;
+  text-align: center;
+  padding: 4px 15px;
+  border-radius: 30px;
+  font-weight: 500;
+  margin: 4px;
+  background: #0096ff;
+}
+
+.spacer {
+  margin-bottom: 20px;
+  display: inline-block;
+  width: 100%;
 }
