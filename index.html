@@ -22,7 +22,7 @@
       <span class="designation">Full Stack Developer</span>
       <span class="location"># Gurgaon, India</span>
       <span class="icons">
-        <a href="http://twitter.com/nirbhaygp">
+        <a href="#email">
           <i class="fas fa-at"></i>
         </a>
         <a href="http://twitter.com/nirbhaygp">
@@ -34,7 +34,6 @@
         <a href="https://stackoverflow.com/users/6389772/">
           <i class="fab fa-stack-overflow"></i>
         </a>
-
       </span>
       <div id="fader" class="card">
         <span class="title">UI frameworks</span>
@@ -72,7 +71,14 @@
         <span class="spacer"></span>
       </div>
     </div>
-    <div class="main-block" style="background: white; height: 100vh;"></div>
+    <div class="subscription-box">
+      <span class="hero-text">I also publish a weekly tech newsletter.
+        <br/>Enter your email below to subscribe.</span>
+      <form name="subscription-form" method="POST" action="/subscribe" target="self">
+        <input class="input-field" type="email" name="email" autocomplete="off" placeholder="john.doe@example.com" />
+        <input type="submit" value="Subscribe" class="submit-btn" />
+      </form>
+    </div>
   </div>
   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

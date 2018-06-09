@@ -318,3 +318,54 @@ body {
 .nav-white .nav-link:hover::after {
   box-shadow: 0px 2px #0a173d;
 }
+
+.subscription-box {
+  height: 30vh;
+  min-height: 250px;
+  background: #0096ff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 120px;
+}
+
+.submit-btn {
+  min-width: 100px;
+  height: 50px;
+  box-shadow: none;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  background: #f4a062;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 0 15px;
+}
+
+.input-field {
+  width: 500px;
+  height: 50px;
+  box-shadow: none;
+  border: none;
+  border-radius: 3px;
+  margin: 0;
+  padding: 15px;
+  font-size: 18px;
+}
+.input-field:focus {
+  outline: none;
+}
+
+.hero-text {
+  width: 600px;
+  font-size: 24px;
+  color: white;
+  display: block;
+  margin-bottom: 20px;
+}
+
+.subscription-form {
+  display: flex;
+  flex-direction: column;
+}
