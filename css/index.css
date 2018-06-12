@@ -289,7 +289,7 @@ body {
 .post-header {
   width: 100%;
   line-height: 40px;
-  font-size: 24px;
+  font-size: 18px;
   border-bottom: 2px solid #0096ff;
   color: #84b833;
   font-weight: 500;
@@ -297,10 +297,10 @@ body {
 
 .post-body {
   display: inline;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 24px;
   /* letter-spacing: 0; */
-  word-spacing: 2px;
+  /* word-spacing: 2px; */
   font-weight: 300;
   text-align: left;
 }
