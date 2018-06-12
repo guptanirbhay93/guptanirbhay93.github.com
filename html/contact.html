@@ -1,0 +1,45 @@
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Sans:100,100i,300,400,400i,500,600,700,700i" rel="stylesheet">
+  <link href="/css/index.css" rel="stylesheet">
+  <link href="/css/contact.css" rel="stylesheet">
+</head>
+
+<body>
+  <div id="root">
+    <div class="nav-bar nav-white">
+      <a href="/" class="nav-link p-absolute t-bold nav-title">@nirbhaygp</a>
+      <a href="/html/about.html" class="nav-link">About</a>
+      <a href="/html/work.html" class="nav-link">Work</a>
+      <a href="/html/blog.html" class="nav-link">Blog</a>
+      <a href="/html/contact.html" class="nav-link">Contact</a>
+    </div>
+    <div class="contact-form">
+      <form method="POST" action="/ask">
+        <div class="form-group">
+          <input autocomplete="off" type="text" name="name" class="input-field" />
+          <label class="label" for="name">
+            Name
+          </label>
+        </div>
+        <div class="form-group">
+          <input autocomplete="off" type="email" name="email" class="input-field" />
+          <label class="label" for="name">
+            Email
+          </label>
+        </div>
+        <div class="form-group">
+          <textarea autocomplete="off" name="message" class="input-field textarea" rows="5"></textarea>
+          <label class="label" for="message">
+            Message
+          </label>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
