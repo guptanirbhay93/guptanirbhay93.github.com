@@ -3,6 +3,10 @@
   -webkit-font-smoothing: antialiased;
 }
 
+.h-100 {
+  height: 100vh !important;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -37,6 +41,11 @@ body {
   justify-content: center;
   height: 70vh;
   position: relative;
+}
+
+.main-block-white {
+  color: black;
+  background: white;
 }
 
 .app-tools {
@@ -301,7 +310,7 @@ body {
   line-height: 24px;
   /* letter-spacing: 0; */
   /* word-spacing: 2px; */
-  font-weight: 300;
+  /* font-weight: 300; */
   text-align: left;
 }
 
